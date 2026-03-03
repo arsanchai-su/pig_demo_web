@@ -9,38 +9,32 @@ import '../chartConfig'; // Import the registration file
 
 const Report = () => {
   const [selectedFarm, setSelectedFarm] = useState('คอกที่ 1 ฟาร์มอำเภอท่าศาลา');
-  const [selectedDate, setSelectedDate] = useState('3 Sep');
+  const [selectedDate, setSelectedDate] = useState('31 ม.ค.');
 
   const lineData1 = {
-    labels: ['28 Aug', '29 Aug', '30 Aug', '31 Aug', '1 Sep', '2 Sep', '3 Sep'],
+    labels: ['25 ม.ค.', '26 ม.ค.', '27 ม.ค.', '28 ม.ค.', '29 ม.ค.', '30 ม.ค.', '31 ม.ค.'],
     datasets: [
       {
         label: 'นอน',
-        data: [57, 49, 52, 55, 51, 54, 48],
+        data: [55, 50, 53, 56, 53, 52, 47],
         borderColor: 'rgba(75, 192, 192, 1)',
         fill: false,
       },
       {
-        label: 'นั่ง',
-        data: [5, 7, 6.6, 5.6, 7.3, 3.2, 4],
-        borderColor: 'rgba(153, 102, 255, 1)',
-        fill: false,
-      },
-      {
         label: 'ยืน',
-        data: [25, 31, 22, 27, 34, 20, 33],
+        data: [27, 29, 24, 26, 27, 21, 35],
         borderColor: 'rgba(255, 159, 64, 1)',
         fill: false,
       },
       {
         label: 'กิน',
-        data: [5.3, 5.9, 6, 6.2, 5.4, 4.9, 5.5],
+        data: [5.5, 5.7, 6.1, 5.9, 5.2, 5.1, 5.8],
         borderColor: 'rgba(54, 162, 235, 1)',
         fill: false,
       },
       {
         label: 'ดื่มน้ำ',
-        data: [2.2, 2.5, 2.1, 1.9, 1.8, 2.3, 2.4],
+        data: [2.3, 2.4, 2.0, 2.1, 1.9, 2.2, 2.5],
         borderColor: 'rgba(255, 99, 132, 1)',
         fill: false,
       },
@@ -48,35 +42,29 @@ const Report = () => {
   };
 
   const lineData2 = {
-    labels: ['28 Aug', '29 Aug', '30 Aug', '31 Aug', '1 Sep', '2 Sep', '3 Sep'],
+    labels: ['25 ม.ค.', '26 ม.ค.', '27 ม.ค.', '28 ม.ค.', '29 ม.ค.', '30 ม.ค.', '31 ม.ค.'],
     datasets: [
       {
         label: 'นอน',
-        data: [60, 51, 54, 58, 53, 57, 50],
+        data: [58, 53, 55, 59, 53, 56, 48],
         borderColor: 'rgba(75, 192, 192, 1)',
         fill: false,
       },
       {
-        label: 'นั่ง',
-        data: [5, 7, 6.6, 5.6, 7.3, 3.2, 4],
-        borderColor: 'rgba(153, 102, 255, 1)',
-        fill: false,
-      },
-      {
         label: 'ยืน',
-        data: [22, 29, 19, 24, 31, 19, 30],
+        data: [24, 27, 21, 23, 28, 20, 32],
         borderColor: 'rgba(255, 159, 64, 1)',
         fill: false,
       },
       {
         label: 'กิน',
-        data: [5.3, 5.9, 6, 6.2, 5.4, 4.9, 5.5],
+        data: [5.4, 6.1, 5.8, 6.0, 5.6, 5.0, 5.3],
         borderColor: 'rgba(54, 162, 235, 1)',
         fill: false,
       },
       {
         label: 'ดื่มน้ำ',
-        data: [2.2, 2.5, 2.1, 1.9, 1.8, 2.3, 2.4],
+        data: [2.1, 2.6, 2.2, 2.0, 1.7, 2.4, 2.3],
         borderColor: 'rgba(255, 99, 132, 1)',
         fill: false,
       },
@@ -84,35 +72,29 @@ const Report = () => {
   };
 
   const lineData3 = {
-    labels: ['28 Aug', '29 Aug', '30 Aug', '31 Aug', '1 Sep', '2 Sep', '3 Sep'],
+    labels: ['25 ม.ค.', '26 ม.ค.', '27 ม.ค.', '28 ม.ค.', '29 ม.ค.', '30 ม.ค.', '31 ม.ค.'],
     datasets: [
       {
         label: 'นอน',
-        data: [55, 47, 50, 53, 49, 52, 46],
+        data: [53, 48, 51, 54, 47, 50, 45],
         borderColor: 'rgba(75, 192, 192, 1)',
         fill: false,
       },
       {
-        label: 'นั่ง',
-        data: [7, 8, 7.6, 6.6, 8.3, 5.2, 5.7],
-        borderColor: 'rgba(153, 102, 255, 1)',
-        fill: false,
-      },
-      {
         label: 'ยืน',
-        data: [26, 33, 27, 28, 36, 22, 31],
+        data: [28, 31, 25, 29, 34, 23, 33],
         borderColor: 'rgba(255, 159, 64, 1)',
         fill: false,
       },
       {
         label: 'กิน',
-        data: [5.3, 5.9, 6, 6.2, 5.4, 4.9, 5.5],
+        data: [5.1, 6.0, 5.7, 6.3, 5.3, 5.2, 5.6],
         borderColor: 'rgba(54, 162, 235, 1)',
         fill: false,
       },
       {
         label: 'ดื่มน้ำ',
-        data: [2.2, 2.5, 2.1, 1.9, 1.8, 2.3, 2.4],
+        data: [2.4, 2.3, 1.9, 2.0, 2.1, 2.5, 2.2],
         borderColor: 'rgba(255, 99, 132, 1)',
         fill: false,
       },
@@ -129,7 +111,7 @@ const Report = () => {
   const selectedData = lineData.datasets.map(dataset => dataset.data[selectedIndex]);
 
   const barData = {
-    labels: ['นอน', 'ยืน', 'นั่ง', 'กิน', 'ดื่มน้ำ'],
+    labels: ['นอน', 'ยืน', 'กิน', 'ดื่มน้ำ'],
     datasets: [
       {
         label: 'ชั่วโมงในการทำกิจกรรม',
@@ -154,7 +136,7 @@ const Report = () => {
   };
 
   const pieData = {
-    labels: ['นอน', 'ยืน', 'นั่ง', 'กิน', 'ดื่มน้ำ'],
+    labels: ['นอน', 'ยืน','กิน', 'ดื่มน้ำ'],
     datasets: [
       {
         label: '# of Votes',
